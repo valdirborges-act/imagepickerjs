@@ -34,6 +34,26 @@ class Principal extends StatelessWidget {
                     },
                   ),
                 ),
+                Center(
+                  child: ElevatedButton(
+                    child: Text('Webview JS'),
+                    onPressed: () {
+                      print('Clicou no botão');
+
+                      Navigator.pushNamed(context, '/webviewjs');
+                    },
+                  ),
+                ),
+                Center(
+                  child: ElevatedButton(
+                    child: Text('ImagemJS'),
+                    onPressed: () {
+                      print('Clicou no botão');
+
+                      Navigator.pushNamed(context, '/imagemjs');
+                    },
+                  ),
+                ),
               ]),
         ),
       ),

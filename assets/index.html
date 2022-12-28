@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+        <title>Meu arquivo HTML local</title>
+    </head>
+
+    <p id="imagemdoflutter"></p>
+
+    <body>
+        <h1 id="title">Olá Mundo!</h1>
+        <script type="text/javascript">
+            function fromFlutter(novaImagem) {
+                document.getElementById("imagemdoflutter").innerHTML = '<div>' + 
+                            '<p>Enviado pelo flutter</p>' +
+                            '<img width="300" height="300" src="data:image/png;base64, ' + 
+                            novaImagem + 
+                            '" alt="Red dot" />' +
+                            '</div>';
+                sendBack();
+             }
+
+             function sendBack() {
+                messageHandler.postMessage("Voltando do Javascript");
+             }
+        </script>
+    </body>
+</html>

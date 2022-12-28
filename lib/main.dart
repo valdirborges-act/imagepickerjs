@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:imagepicker/counterapp.dart';
+import 'package:imagepicker/lmagemjs.dart';
 import 'package:imagepicker/principal.dart';
+import 'package:imagepicker/webviewjs.dart';
 
 import 'home_page.dart';
 
@@ -23,6 +25,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => Principal(),
         HomePage.routeName: (context) => HomePage(),
         CounterApp.routeName: (context) => CounterApp(),
+        WebViewJS.routeName: (context) => WebViewJS(title: 'WebView JavaScript',),
+        ImagemJS.routeName: (context) => ImagemJS(),
       },
     );
   }
